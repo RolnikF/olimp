@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+
+/*верхняя полоса*/
+.main-stroke{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.search {
+    display: flex;
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+    margin-left: 50px;
+    border-style: none;
+    border-radius: 32px;
+}
+.d-flex {
+    width: 100%;
+}
+.form-control {
+    width: 60%;
+
+
+}
+.btn-outline-success {
+    width: 40%;
+    background-color: white;
+
+}
+.main-stroke>input::placeholder{
+    font-weight:bold;
+    font-size: 30px;
+}
+
+.filter {
+    display:flex;
+    background-color: #00ffe181;
+    width: 40%;
+    height: 52px;
+    margin: 10px;
+    justify-content:center;
+    align-items:center;
+    border-radius: 32px;
+    border-style: none;
+
+}
+
+.filter>span {
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+.sefi {
+    display: flex;
+    width: 80%
+}
+.brend {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    align-items:center;
+    padding-top: 10px;
+    margin-right: 50px;
+    padding-bottom: 5px;
+}
+.brend>span {
+    font-family: cursive;
+    font-weight: bold;
+    font-size:1.4em;
+}
+.list-filter {
+    width:30%;
+}
+/*основная информация*/
+.main-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom:50px;
+    padding-top:90px;
+    padding-bottom:20%;
+}
+
+.card {
+    margin-top: 2em;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border-radius: 35px;
+    width: 400px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.photo-of-recipe {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    background-color: #ffffffdf;
+    border-width: 0.5px;
+    border-radius: 32px 32px 0 0;
+}
+
+.time-and-recipe    {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:400px;
+    height: 150px;
+    background-color: #7369fbc5;
+    border-radius: 0 0 32px 32px;
+}
+
+
+/*навигиционная строка*/
+
+.navigator {
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:75px;
+    background-color:#ffffffe7;
+}
+
+.week-recipe {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+.home {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+.profile {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+
+@media (max-width: 1370px) {
+    .sotni-ingr {
+        display:none;
+    }
+    .brend {
+        margin-top:10px;
+        padding-right: 16px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .main-block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 925px) {
+    .main-block {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin-left:0;
+        margin-right:0;
+
+    }
+    .search {
+        margin-left:1em;
+    }
+    .brend {
+        padding-right:0.5em;
+    }
+    .detail-recipe {
+        width:100%;
+    }
+
+}
+@media (max-width: 700px) {
+    .brend {
+        display:none;
+    }
+    .sefi {
+        width:100%;
+        justify-content: space-between;
+    }
+    .search {
+        width:60%;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .recipe-name {
+        font-size: 32px;
+    }
+    .recipe-ingredients {
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px) {
+    .card {
+        margin:auto;
+        margin-top: 2em;
+    }
+
+    .photo-of-recipe {
+        width:100%;
+    }
+    .time-and-recipe {
+        width:100%;
+    }
+    .photo-of-recipe {
+        border-radius: 0;
+    }
+    .time-and-recipe{
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

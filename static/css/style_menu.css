@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+}
+
+
+.window {
+    width: 100%;
+}
+
+.input-window{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    margin:10px;
+}
+.input-window>input {
+    margin-bottom:20px;
+}
+.input-window>textarea {
+    margin-bottom:20px;
+
+}
+.card-recipe {
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    height: 400px;
+    margin-top: 2em;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.card {
+    border-radius: 35px;
+    background-color: #ffffffa6;
+
+}
+.card-text {
+    font-size: 1.2em;
+}
+
+/*верхняя строка*/
+.new-menu {
+    position: fixed;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.plus {
+    display: flex;
+    width: 5em;
+    background-color: #0000006e;
+    justify-content: center;
+}
+.plus>h1 {
+    color: #aaaaaa;
+}
+
+
+.detail-recipe {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:80%;
+    height:100%;
+    background-color:#ffffffc2;
+}
+
+
+@media (max-width:500px) {
+    .card {
+        border-radius:0 0 0 0;
+        width:100%;
+    }
+}
+
+
+@media (max-width: 925px) {
+    .detail-recipe {
+        width:100%;
+    }
+
+}
+
+
+.main-recipe {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding-bottom: 4%;
+    margin:10%;
+    border-radius: 35px;
+    overflow-x:hidden;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.buttons-of-recipe {
+    margin: 10px;
+}

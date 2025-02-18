@@ -1,0 +1,124 @@
+/*навигиционная строка*/
+
+.navigator {
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:75px;
+    background-color:#ffffff;
+}
+
+.week-recipe {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+.home {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+.profile {
+    width:35px;
+    height: 35px;
+    margin:35px;
+}
+
+
+
+
+
+
+
+.notic {
+    position:fixed;
+    bottom:100px;
+    right:50px;
+    z-index:100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    width:320px;
+    border-style: solid;
+    border-width: 0.5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1370px) {
+    .sotni-ingr {
+        display:none;
+    }
+    .brend {
+        margin-top:0.6em;
+        padding-right: 1em;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .main-block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 925px) {
+    .main-block {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin-left:0;
+        margin-right:0;
+
+    }
+    .search {
+        margin-left:1em;
+    }
+    .brend {
+        padding-right:0.5em;
+    }
+    .detail-recipe {
+        width:100%;
+    }
+
+}
+@media (max-width: 700px) {
+    .brend {
+        display:none;
+    }
+    .sefi {
+        width:100%;
+        justify-content: space-between;
+    }
+    .search {
+        width:60%;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .recipe-name {
+        font-size: 32px;
+    }
+    .recipe-ingredients {
+        font-size: 22px;
+    }
+}
+
+
+
+

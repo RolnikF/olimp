@@ -1,0 +1,24 @@
+    {% for el in recipes %}
+    <div class="card card-recipe" loading="lazy"
+         style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+        <div class="card-body">
+            <div style="width:100%; height:330px; overflow-y:hidden;">
+                <h2 class="card-title" style="text-shadow: 5px 5px 8px #b6b6b6;">{{ el.name }}</h2>
+                <h5>Лайков: {{ el.like }}<br>Вид: {{ el.kind }} </h5>
+                <h6 style="font-size:15px; border-top-style:solid; border-top-width:3px;padding:5px;"><strong>Время
+                    готовки</strong> - {{ el.time_of_cook }} <br> <strong>Порции</strong> - {{ el.portions }}</h6>
+                <h6 style="padding:5px;"><strong>Калории</strong>: {{ el.kall }} <br> <strong>Белок</strong> - {{
+                    el.belok }} | <strong>Жиры</strong> - {{ el.fat }} | <strong>Угеводы</strong> - {{ el.carb }}
+                </h6>
+                <div style="font-size:15px; border-top-style:solid; border-top-width:1px; padding:5px;">
+                    {% for ingredient in el.ingredients %}
+                    <li><strong>{{ ingredient.name }}</strong> - {{ ingredient.quantity }}</li>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="/all/{{ name }}/{{ el.id }}" class="btn btn-primary"
+               style="border-radius:35px; margin-top:0px;">РЕЦЕПТ
+                ПОЛНОСТЬЮ</a>
+        </div>
+    </div>
+    {% endfor %}
