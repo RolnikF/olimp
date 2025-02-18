@@ -1,2 +1,1 @@
-# olimp
-файл instance/pub.zip - следует извлечь
+# файл instance/pub.zip - следует извлечь
